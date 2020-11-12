@@ -3,6 +3,18 @@ variable "aws_region" {
   default     = "eu-south-1"
 }
 
+variable tfc_org_name {
+  description = "Name of the Terraform Cloud Organization"
+  type        = string
+  default     = "hashicorp-learn"
+}
+
+variable tfc_network_workspace_name {
+  description = "Name of the network workspace"
+  type        = string
+  default     = "learn-terraform-run-triggers-network"
+}
+
 variable "image_id" {
   description = "AMI Id will be used for auto scaling group "
 }
